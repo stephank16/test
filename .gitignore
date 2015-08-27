@@ -35,4 +35,4 @@ nosetests.xml
 .pydevproject
 
 # IPython things
-#.ipynb_checkpoints
+.ipynb_checkpoints
