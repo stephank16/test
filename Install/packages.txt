@@ -1,0 +1,4 @@
+netcdf4
+jupyter
+anaconda-client
+basemap

@@ -1,0 +1,8 @@
+bash-kernel
+ipython-cypher
+neo4jrestclient
+py2neo
+python-igraph
+pydap
+pydap.handlers.netcdf
+ipython-sql

@@ -1,0 +1,3 @@
+conda install --file packages.txt
+pip install -r pip-packages.txt
+conda install -c birdhouse --file birdhouse.txt
