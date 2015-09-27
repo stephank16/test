@@ -6,3 +6,6 @@ python-igraph
 pydap
 pydap.handlers.netcdf
 ipython-sql
+seqdiag
+actdiag
+nwdiag
