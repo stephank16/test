@@ -1,0 +1,453 @@
+---------------------------------------------------------------------------
++++++++++++++ ESMVal TOOL REFERENCES and ACKNOWLEDGEMENTS LOG +++++++++++++
+---------------------------------------------------------------------------
+
+Namelist file: namelist_SeaIce.xml
+Creation date: Fri Aug 21 13:59:43 CEST 2015
+ESMValTool version: 0.8
+Host name: pa1
+User name: laue_ax
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may
+not use this file except in compliance with the License. You may obtain
+a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS"BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+Please acknowledge the use of the ESMValTool.
+Please cite Righi et al., Geosci. Model Dev., 8, 733-768 doi:10.5194/gmd-8-733-2015, 2015.
+For the specific diagnostics, see below.
+
+---------------------------------------------------------------------------
+
+=== SeaIce_tsline.ncl ===
+
+AUTHOR(S): 
+-A- Gottschaldt, Klaus-Dirk (DLR, Germany - klaus-dirk.gottschaldt 'at' dlr.de)
+
+CONTRIBUTOR(S): 
+  -C- Huebner, Michael (DLR, Germany - michael.huebner 'at' dlr.de)
+  -C- Evaldsson, Martin (SMHI, Sweden - martin.evaldsson 'at' smhi.se)
+  -C- Braeu, Melanie (DLR, Germany - braeu.melanie 'at' physik.uni-muenchen.de)
+  -C- Senftleben, Daniel (DLR, Germany - daniel.senftleben 'at' dlr.de)
+
+REFERENCE(S) FOR THIS DIAGNOSTIC: 
+  -R- Please cite Please contact the author(s) to discuss acknowledgment or co-authorship.
+
+ACKNOWLEDGEMENTS FOR THE PROJECTS: 
+  -P- EU FP7 project EMBRACE
+  -P- BMBF MiKlip Project ClimVal
+PREPROCESSING/REFORMATTING (ESMValTool v0.8):
+
+  Variable: sic
+
+    Model: MPI-ESM-LR
+    Input path: /export/pa_data02/ESMVal/model/ETHZ_CMIP5/historical/OImon/sic/MPI-ESM-LR/r1i1p1/
+    Input file(s):
+      (1) sic_OImon_MPI-ESM-LR_historical_r1i1p1_185001-200512.nc
+    Fixes applied to input file(s): none
+
+    Model: MPI-ESM-MR
+    Input path: /export/pa_data02/ESMVal/model/ETHZ_CMIP5/historical/OImon/sic/MPI-ESM-MR/r1i1p1/
+    Input file(s):
+      (1) sic_OImon_MPI-ESM-MR_historical_r1i1p1_200001-200512.nc
+    Fixes applied to input file(s): none
+
+    Model: HadISST
+    Input path: /export/pa_data02/ESMVal/obs/Tier2/HadISST/
+    Input file(s):
+      (1) OBS_HadISST_reanaly_20130524_T2Ms_sic.nc
+    Fixes applied to input file(s): none
+
+    Model: NSIDC-NT
+    Input path: /export/pa_data02/ESMVal/obs/Tier2/NSIDC/
+    Input file(s):
+      (1) OBS_NSIDC-NT_sat_NH_T2Ms_sic_197811-201312.nc
+    Fixes applied to input file(s): none
+
+    Model: NSIDC-BT
+    Input path: /export/pa_data02/ESMVal/obs/Tier2/NSIDC/
+    Input file(s):
+      (1) OBS_NSIDC-BT_sat_NH_T2Ms_sic_197811-201312.nc
+    Fixes applied to input file(s): none
+
+
+
+---------------------------------------------------------------------------
+
+=== SeaIce_ancyc.ncl ===
+AUTHOR(S): 
+  -A- Gottschaldt, Klaus-Dirk (DLR, Germany - klaus-dirk.gottschaldt 'at' dlr.de)
+
+CONTRIBUTOR(S): 
+  -C-Huebner, Michael (DLR, Germany - michael.huebner 'at' dlr.de)
+  -C- Evaldsson, Martin (SMHI, Sweden - martin.evaldsson 'at' smhi.se)
+  -C- Braeu, Melanie (DLR, Germany - braeu.melanie 'at' physik.uni-muenchen.de)
+  -C- Senftleben, Daniel (DLR, Germany - daniel.senftleben 'at' dlr.de)
+
+REFERENCE(S) FOR THIS DIAGNOSTIC: 
+  -R- Please cite Please contact the author(s) to discuss acknowledgment or co-authorship.
+
+ACKNOWLEDGEMENTS FOR THE PROJECTS: 
+  -A- EU FP7 project EMBRACE
+  -A- BMBF MiKlip Project ClimVal
+  
+PREPROCESSING/REFORMATTING (ESMValTool v0.8):
+
+  Variable: sic
+
+    Model: MPI-ESM-LR
+    Input path: /export/pa_data02/ESMVal/model/ETHZ_CMIP5/historical/OImon/sic/MPI-ESM-LR/r1i1p1/
+    Input file(s):
+      (1) sic_OImon_MPI-ESM-LR_historical_r1i1p1_185001-200512.nc
+    Fixes applied to input file(s): none
+
+    Model: MPI-ESM-MR
+    Input path: /export/pa_data02/ESMVal/model/ETHZ_CMIP5/historical/OImon/sic/MPI-ESM-MR/r1i1p1/
+    Input file(s):
+      (1) sic_OImon_MPI-ESM-MR_historical_r1i1p1_200001-200512.nc
+    Fixes applied to input file(s): none
+
+    Model: HadISST
+    Input path: /export/pa_data02/ESMVal/obs/Tier2/HadISST/
+    Input file(s):
+      (1) OBS_HadISST_reanaly_20130524_T2Ms_sic.nc
+    Fixes applied to input file(s): none
+
+    Model: NSIDC-NT
+    Input path: /export/pa_data02/ESMVal/obs/Tier2/NSIDC/
+    Input file(s):
+      (1) OBS_NSIDC-NT_sat_NH_T2Ms_sic_197811-201312.nc
+    Fixes applied to input file(s): none
+
+    Model: NSIDC-BT
+    Input path: /export/pa_data02/ESMVal/obs/Tier2/NSIDC/
+    Input file(s):
+      (1) OBS_NSIDC-BT_sat_NH_T2Ms_sic_197811-201312.nc
+    Fixes applied to input file(s): none
+
+
+
+---------------------------------------------------------------------------
+
+=== SeaIce_polcon.ncl ===
+AUTHOR(S): 
+  -A- Gottschaldt, Klaus-Dirk (DLR, Germany - klaus-dirk.gottschaldt 'at' dlr.de)
+
+CONTRIBUTOR(S): 
+  -C- Senftleben, Daniel (DLR, Germany - daniel.senftleben 'at' dlr.de)
+
+REFERENCE(S) FOR THIS DIAGNOSTIC: 
+  -R- Please cite Please contact the author(s) to discuss acknowledgment or co-authorship.
+
+ACKNOWLEDGEMENTS FOR THE PROJECTS: 
+  -P- EU FP7 project EMBRACE
+  -P- BMBF MiKlip Project ClimVal
+  
+PREPROCESSING/REFORMATTING (ESMValTool v0.8):
+
+  Variable: sic
+
+    Model: MPI-ESM-LR
+    Input path: /export/pa_data02/ESMVal/model/ETHZ_CMIP5/historical/OImon/sic/MPI-ESM-LR/r1i1p1/
+    Input file(s):
+      (1) sic_OImon_MPI-ESM-LR_historical_r1i1p1_185001-200512.nc
+    Fixes applied to input file(s): none
+
+    Model: MPI-ESM-MR
+    Input path: /export/pa_data02/ESMVal/model/ETHZ_CMIP5/historical/OImon/sic/MPI-ESM-MR/r1i1p1/
+    Input file(s):
+      (1) sic_OImon_MPI-ESM-MR_historical_r1i1p1_200001-200512.nc
+    Fixes applied to input file(s): none
+
+    Model: HadISST
+    Input path: /export/pa_data02/ESMVal/obs/Tier2/HadISST/
+    Input file(s):
+      (1) OBS_HadISST_reanaly_20130524_T2Ms_sic.nc
+    Fixes applied to input file(s): none
+
+    Model: NSIDC-NT
+    Input path: /export/pa_data02/ESMVal/obs/Tier2/NSIDC/
+    Input file(s):
+      (1) OBS_NSIDC-NT_sat_NH_T2Ms_sic_197811-201312.nc
+    Fixes applied to input file(s): none
+
+    Model: NSIDC-BT
+    Input path: /export/pa_data02/ESMVal/obs/Tier2/NSIDC/
+    Input file(s):
+      (1) OBS_NSIDC-BT_sat_NH_T2Ms_sic_197811-201312.nc
+    Fixes applied to input file(s): none
+
+
+
+---------------------------------------------------------------------------
+
+=== SeaIce_polcon_diff.ncl ===
+
+AUTHOR(S): 
+  -A- Gottschaldt, Klaus-Dirk (DLR, Germany - klaus-dirk.gottschaldt 'at' dlr.de)
+
+CONTRIBUTOR(S): 
+  -C- Senftleben, Daniel (DLR, Germany - daniel.senftleben 'at' dlr.de)
+
+REFERENCE(S) FOR THIS DIAGNOSTIC: 
+  -R- Please cite Please contact the author(s) to discuss acknowledgment or co-authorship.
+
+ACKNOWLEDGEMENTS FOR THE PROJECTS: 
+  -P- EU FP7 project EMBRACE
+  -P- BMBF MiKlip Project ClimVal
+  
+PREPROCESSING/REFORMATTING (ESMValTool v0.8):
+
+  Variable: sic
+
+    Model: MPI-ESM-LR
+    Input path: /export/pa_data02/ESMVal/model/ETHZ_CMIP5/historical/OImon/sic/MPI-ESM-LR/r1i1p1/
+    Input file(s):
+      (1) sic_OImon_MPI-ESM-LR_historical_r1i1p1_185001-200512.nc
+    Fixes applied to input file(s): none
+
+    Model: MPI-ESM-MR
+    Input path: /export/pa_data02/ESMVal/model/ETHZ_CMIP5/historical/OImon/sic/MPI-ESM-MR/r1i1p1/
+    Input file(s):
+      (1) sic_OImon_MPI-ESM-MR_historical_r1i1p1_200001-200512.nc
+    Fixes applied to input file(s): none
+
+    Model: HadISST
+    Input path: /export/pa_data02/ESMVal/obs/Tier2/HadISST/
+    Input file(s):
+      (1) OBS_HadISST_reanaly_20130524_T2Ms_sic.nc
+    Fixes applied to input file(s): none
+
+    Model: NSIDC-NT
+    Input path: /export/pa_data02/ESMVal/obs/Tier2/NSIDC/
+    Input file(s):
+      (1) OBS_NSIDC-NT_sat_NH_T2Ms_sic_197811-201312.nc
+    Fixes applied to input file(s): none
+
+    Model: NSIDC-BT
+    Input path: /export/pa_data02/ESMVal/obs/Tier2/NSIDC/
+    Input file(s):
+      (1) OBS_NSIDC-BT_sat_NH_T2Ms_sic_197811-201312.nc
+    Fixes applied to input file(s): none
+
+
+---------------------------------------------------------------------------
+
+=== SeaIce_tsline.ncl ===
+AUTHOR(S): 
+  -A- Gottschaldt, Klaus-Dirk (DLR, Germany - klaus-dirk.gottschaldt 'at' dlr.de)
+
+CONTRIBUTOR(S): 
+  -C- Huebner, Michael (DLR, Germany - michael.huebner 'at' dlr.de)
+  -C- Evaldsson, Martin (SMHI, Sweden - martin.evaldsson 'at' smhi.se)
+  -C- Braeu, Melanie (DLR, Germany - braeu.melanie 'at' physik.uni-muenchen.de)
+  -C- Senftleben, Daniel (DLR, Germany - daniel.senftleben 'at' dlr.de)
+
+REFERENCE(S) FOR THIS DIAGNOSTIC: 
+  Please cite Please contact the author(s) to discuss acknowledgment or co-authorship.
+
+ACKNOWLEDGEMENTS FOR THE PROJECTS: 
+  -P- EU FP7 project EMBRACE
+  -P- BMBF MiKlip Project ClimVal
+  
+PREPROCESSING/REFORMATTING (ESMValTool v0.8):
+
+  Variable: sic
+
+    Model: MPI-ESM-LR
+    Input path: /export/pa_data02/ESMVal/model/ETHZ_CMIP5/historical/OImon/sic/MPI-ESM-LR/r1i1p1/
+    Input file(s):
+      (1) sic_OImon_MPI-ESM-LR_historical_r1i1p1_185001-200512.nc
+    Fixes applied to input file(s): none
+
+    Model: MPI-ESM-MR
+    Input path: /export/pa_data02/ESMVal/model/ETHZ_CMIP5/historical/OImon/sic/MPI-ESM-MR/r1i1p1/
+    Input file(s):
+      (1) sic_OImon_MPI-ESM-MR_historical_r1i1p1_200001-200512.nc
+    Fixes applied to input file(s): none
+
+    Model: HadISST
+    Input path: /export/pa_data02/ESMVal/obs/Tier2/HadISST/
+    Input file(s):
+      (1) OBS_HadISST_reanaly_20130524_T2Ms_sic.nc
+    Fixes applied to input file(s): none
+
+    Model: NSIDC-NT
+    Input path: /export/pa_data02/ESMVal/obs/Tier2/NSIDC/
+    Input file(s):
+      (1) OBS_NSIDC-NT_sat_SH_T2Ms_sic_197811-201312.nc
+    Fixes applied to input file(s): none
+
+    Model: NSIDC-BT
+    Input path: /export/pa_data02/ESMVal/obs/Tier2/NSIDC/
+    Input file(s):
+      (1) OBS_NSIDC-BT_sat_SH_T2Ms_sic_197811-201312.nc
+    Fixes applied to input file(s): none
+
+
+
+---------------------------------------------------------------------------
+
+=== SeaIce_ancyc.ncl ===
+AUTHOR(S): 
+  -A- Gottschaldt, Klaus-Dirk (DLR, Germany - klaus-dirk.gottschaldt 'at' dlr.de)
+
+CONTRIBUTOR(S): 
+  -C- Huebner, Michael (DLR, Germany - michael.huebner 'at' dlr.de)
+  -C- Evaldsson, Martin (SMHI, Sweden - martin.evaldsson 'at' smhi.se)
+  -C- Braeu, Melanie (DLR, Germany - braeu.melanie 'at' physik.uni-muenchen.de)
+  -C- Senftleben, Daniel (DLR, Germany - daniel.senftleben 'at' dlr.de)
+
+REFERENCE(S) FOR THIS DIAGNOSTIC: 
+  Please cite Please contact the author(s) to discuss acknowledgment or co-authorship.
+
+ACKNOWLEDGEMENTS FOR THE PROJECTS: 
+  -P- EU FP7 project EMBRACE
+  -P- BMBF MiKlip Project ClimVal
+PREPROCESSING/REFORMATTING (ESMValTool v0.8):
+
+  Variable: sic
+
+    Model: MPI-ESM-LR
+    Input path: /export/pa_data02/ESMVal/model/ETHZ_CMIP5/historical/OImon/sic/MPI-ESM-LR/r1i1p1/
+    Input file(s):
+      (1) sic_OImon_MPI-ESM-LR_historical_r1i1p1_185001-200512.nc
+    Fixes applied to input file(s): none
+
+    Model: MPI-ESM-MR
+    Input path: /export/pa_data02/ESMVal/model/ETHZ_CMIP5/historical/OImon/sic/MPI-ESM-MR/r1i1p1/
+    Input file(s):
+      (1) sic_OImon_MPI-ESM-MR_historical_r1i1p1_200001-200512.nc
+    Fixes applied to input file(s): none
+
+    Model: HadISST
+    Input path: /export/pa_data02/ESMVal/obs/Tier2/HadISST/
+    Input file(s):
+      (1) OBS_HadISST_reanaly_20130524_T2Ms_sic.nc
+    Fixes applied to input file(s): none
+
+    Model: NSIDC-NT
+    Input path: /export/pa_data02/ESMVal/obs/Tier2/NSIDC/
+    Input file(s):
+      (1) OBS_NSIDC-NT_sat_SH_T2Ms_sic_197811-201312.nc
+    Fixes applied to input file(s): none
+
+    Model: NSIDC-BT
+    Input path: /export/pa_data02/ESMVal/obs/Tier2/NSIDC/
+    Input file(s):
+      (1) OBS_NSIDC-BT_sat_SH_T2Ms_sic_197811-201312.nc
+    Fixes applied to input file(s): none
+
+
+
+---------------------------------------------------------------------------
+
+=== SeaIce_polcon.ncl ===
+
+AUTHOR(S): 
+  -A- Gottschaldt, Klaus-Dirk (DLR, Germany - klaus-dirk.gottschaldt 'at' dlr.de)
+
+CONTRIBUTOR(S): 
+  -C- Senftleben, Daniel (DLR, Germany - daniel.senftleben 'at' dlr.de)
+
+REFERENCE(S) FOR THIS DIAGNOSTIC: 
+  Please cite Please contact the author(s) to discuss acknowledgment or co-authorship.
+
+ACKNOWLEDGEMENTS FOR THE PROJECTS: 
+  -P- EU FP7 project EMBRACE
+  -P- BMBF MiKlip Project ClimVal
+PREPROCESSING/REFORMATTING (ESMValTool v0.8):
+
+  Variable: sic
+
+    Model: MPI-ESM-LR
+    Input path: /export/pa_data02/ESMVal/model/ETHZ_CMIP5/historical/OImon/sic/MPI-ESM-LR/r1i1p1/
+    Input file(s):
+      (1) sic_OImon_MPI-ESM-LR_historical_r1i1p1_185001-200512.nc
+    Fixes applied to input file(s): none
+
+    Model: MPI-ESM-MR
+    Input path: /export/pa_data02/ESMVal/model/ETHZ_CMIP5/historical/OImon/sic/MPI-ESM-MR/r1i1p1/
+    Input file(s):
+      (1) sic_OImon_MPI-ESM-MR_historical_r1i1p1_200001-200512.nc
+    Fixes applied to input file(s): none
+
+    Model: HadISST
+    Input path: /export/pa_data02/ESMVal/obs/Tier2/HadISST/
+    Input file(s):
+      (1) OBS_HadISST_reanaly_20130524_T2Ms_sic.nc
+    Fixes applied to input file(s): none
+
+    Model: NSIDC-NT
+    Input path: /export/pa_data02/ESMVal/obs/Tier2/NSIDC/
+    Input file(s):
+      (1) OBS_NSIDC-NT_sat_SH_T2Ms_sic_197811-201312.nc
+    Fixes applied to input file(s): none
+
+    Model: NSIDC-BT
+    Input path: /export/pa_data02/ESMVal/obs/Tier2/NSIDC/
+    Input file(s):
+      (1) OBS_NSIDC-BT_sat_SH_T2Ms_sic_197811-201312.nc
+    Fixes applied to input file(s): none
+
+
+---------------------------------------------------------------------------
+
+=== SeaIce_polcon_diff.ncl ===
+AUTHOR(S): 
+  -A- Gottschaldt, Klaus-Dirk (DLR, Germany - klaus-dirk.gottschaldt 'at' dlr.de)
+
+CONTRIBUTOR(S): 
+  -C- Senftleben, Daniel (DLR, Germany - daniel.senftleben 'at' dlr.de)
+
+REFERENCE(S) FOR THIS DIAGNOSTIC: 
+  -R- Please cite Please contact the author(s) to discuss acknowledgment or co-authorship.
+
+ACKNOWLEDGEMENTS FOR THE PROJECTS: 
+  -P- EU FP7 project EMBRACE
+  -P- BMBF MiKlip Project ClimVal
+  
+PREPROCESSING/REFORMATTING (ESMValTool v0.8):
+
+  Variable: sic
+
+    Model: MPI-ESM-LR
+    Input path: /export/pa_data02/ESMVal/model/ETHZ_CMIP5/historical/OImon/sic/MPI-ESM-LR/r1i1p1/
+    Input file(s):
+      (1) sic_OImon_MPI-ESM-LR_historical_r1i1p1_185001-200512.nc
+    Fixes applied to input file(s): none
+
+    Model: MPI-ESM-MR
+    Input path: /export/pa_data02/ESMVal/model/ETHZ_CMIP5/historical/OImon/sic/MPI-ESM-MR/r1i1p1/
+    Input file(s):
+      (1) sic_OImon_MPI-ESM-MR_historical_r1i1p1_200001-200512.nc
+    Fixes applied to input file(s): none
+
+    Model: HadISST
+    Input path: /export/pa_data02/ESMVal/obs/Tier2/HadISST/
+    Input file(s):
+      (1) OBS_HadISST_reanaly_20130524_T2Ms_sic.nc
+    Fixes applied to input file(s): none
+
+    Model: NSIDC-NT
+    Input path: /export/pa_data02/ESMVal/obs/Tier2/NSIDC/
+    Input file(s):
+      (1) OBS_NSIDC-NT_sat_SH_T2Ms_sic_197811-201312.nc
+    Fixes applied to input file(s): none
+
+    Model: NSIDC-BT
+    Input path: /export/pa_data02/ESMVal/obs/Tier2/NSIDC/
+    Input file(s):
+      (1) OBS_NSIDC-BT_sat_SH_T2Ms_sic_197811-201312.nc
+    Fixes applied to input file(s): none
+
+
+
+---------------------------------------------------------------------------
